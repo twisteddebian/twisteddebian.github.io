@@ -90,9 +90,13 @@
 
         <ol>
           <li>
-            <p>In Ruby you can map like this:</p>
+            <p>OnLoadingComplete:</p>
 
-            <pre><code>['a', 'b'].map { |x| x.uppercase }</code></pre>
+            <pre><code> private static void Main(string[] args)
+        {
+            Loading.OnLoadingComplete += Game_OnStart;
+            Game.OnUpdate += Game_OnUpdate;
+        }</code></pre>
           </li>
           <li>
             <p>In Rails, you can do a shortcut:</p>
